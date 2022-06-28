@@ -28,54 +28,76 @@ body {
   padding: 1rem;
 }
 
-.pw{
-    height: 70px;
-    width: 100%;
-    background-color: rgb(245, 227, 255);
-    display: flex;
-    align-items: center;
-    position: relative;
-    font-size: 1.5rem;
-    padding: 1rem;
-    color: #000;
-    font-weight: 600;
-    border-radius: 10px;
+.pw {
+  height: 70px;
+  width: 100%;
+  background-color: rgb(245, 227, 255);
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #000;
+  font-weight: 600;
+  border-radius: 10px;
 }
 
 .pw button {
-    background-color: rgb(95, 40, 95);
-    color: floralwhite;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-family: inherit;
-    font-weight: 900;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(0%, -50%);
-    transition: opacity 0.2s ease, transform 0.2s ease;
-    cursor: pointer;
-    opacity: 0;
-    border-top-right-radius: 10px;
-    box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.456);
+  background-color: rgb(95, 40, 95);
+  color: floralwhite;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0%, -50%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+  opacity: 0;
+  border-top-right-radius: 10px;
+  box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.456);
 }
 
-.pw:hover button{
-    opacity: 1;
-    transform: translate(0, 0);
+.pw:hover button {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .pw button:active {
-    transform: scale(0.98);
-    box-shadow: none;
+  transform: scale(0.98);
+  box-shadow: none;
 }
 
 .pw-body {
-    padding: 1rem;
+  padding: 0 1rem 1rem;
 }
 
 .form-control {
-    display: flex;
-    justify-content: space-between;
-    margin: 0.5rem 0;
+  color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+}
+
+.generate {
+  background-color: #f0e0ad;
+  color: rebeccapurple;
+  display: block;
+  font-weight: bold;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.467);
+}
+
+.generate:active {
+  transform: scale(0.98);
+  box-shadow: none;
 }
