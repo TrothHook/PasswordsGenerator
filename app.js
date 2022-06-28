@@ -12,8 +12,6 @@ const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
 const symbols = "!#$%^&*()_+";
 
-console.log(passLengthEl.options[passLengthEl.selectedIndex].text);
-
 function getLowercase() {
     return lowerLetters[Math.floor(Math.random() * lowerLetters.length)];
 }
@@ -33,8 +31,10 @@ function getSymbol() {
 
 function generatePassword() {
 
-    const passLength = passLengthEl.options[passLengthEl.selectedIndex].text;
+    const passLength = passLengthEl.value;
+
     let password = "";
+
     for(let i = 0; i < passLength; i++) {
         const x = generateX();
         password += x;
@@ -59,8 +59,11 @@ function generateX(){
     if(symbolEl.checked) {
         xs.push(getSymbol());
     }
+    if(xs.length === 0) return "";
 
     return xs[Math.floor(Math.random() * xs.length)];
+
 }
+
 
 generateEl.addEventListener("click", generatePassword);
